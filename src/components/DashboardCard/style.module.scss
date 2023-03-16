@@ -1,0 +1,75 @@
+@import '../../styles/colors.scss';
+
+.card {
+	background: linear-gradient(
+		332.11deg,
+		$color-primary -141.83%,
+		$color-primary-dark 102.77%
+	);
+	border-radius: 8px;
+	padding: 20px;
+
+	.icon {
+		width: 40px;
+		height: 40px;
+		border-radius: 50%;
+		background-color: $color-white;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		img {
+			object-fit: contain;
+		}
+		margin-bottom: 10px;
+	}
+
+	.title {
+		font-family: 'Poppins', sans-serif;
+		font-style: normal;
+		font-weight: 600;
+		font-size: 14px;
+		line-height: 17px;
+		color: $color-text;
+		margin-bottom: 5px;
+	}
+
+	.amount {
+		font-family: 'Poppins', sans-serif;
+		font-style: normal;
+		font-weight: 750;
+		font-size: 36px;
+		line-height: 36px;
+		color: $color-text;
+	}
+
+	.indicator {
+		box-sizing: border-box;
+		width: fit-content;
+		padding: 4px 6px;
+		border-radius: 4px;
+		background-color: rgba($color: $color-white, $alpha: 1);
+		display: flex;
+		align-items: center;
+		font-family: 'Poppins', sans-serif;
+		font-style: normal;
+		font-weight: 600;
+		font-size: 12px;
+		line-height: 15px;
+		color: $color-text;
+		margin-top: 8px;
+		gap: 5px;
+
+		.arrowUp {
+			width: 20px;
+			height: 20px;
+		}
+	}
+
+	.success {
+		color: $color-green;
+	}
+
+	.error {
+		color: $color-red;
+	}
+}

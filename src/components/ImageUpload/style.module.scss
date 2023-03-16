@@ -1,0 +1,77 @@
+@import '../../styles/colors';
+
+.container {
+	background: $color-white;
+	border: 2px dashed $color-grey;
+	border-radius: 6px;
+	user-select: none;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px;
+
+	.dropzone {
+		text-align: center;
+		padding: 10px;
+	}
+
+	.preview {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: relative;
+		width: 100%;
+
+		img {
+			width: 200px;
+			min-height: 100px;
+		}
+
+		.clear {
+			position: absolute;
+			top: 0;
+			right: 0;
+			display: flex;
+			justify-content: flex-end;
+			cursor: pointer;
+			color: $color-placeholder;
+			transition: all 0.2s;
+
+			&:hover {
+				color: $color-text;
+			}
+		}
+	}
+
+	.loading {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 10px;
+		padding: 20px;
+
+		div {
+			width: 20px;
+			height: 20px;
+		}
+	}
+
+	.error {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 10px;
+		padding: 20px;
+		color: $color-red;
+
+		div {
+			width: 20px;
+			height: 20px;
+		}
+	}
+}
+
+.solid {
+	border: 1px solid $color-grey;
+}

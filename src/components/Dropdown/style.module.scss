@@ -1,0 +1,52 @@
+@import '../../styles/colors.scss';
+
+.dropdown {
+	height: 45px;
+	background: $color-white;
+	border: 1px solid $color-grey;
+	box-sizing: border-box;
+	border-radius: 6px;
+	padding: 10px 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	position: relative;
+	user-select: none;
+
+	.label {
+		font-weight: 450;
+		font-size: 13px;
+		line-height: 15px;
+		display: flex;
+		align-items: center;
+		color: $color-text;
+		padding: 0 15px;
+	}
+
+	.icon {
+		color: $color-placeholder;
+		margin-right: 15px;
+	}
+}
+
+.options {
+	width: 100%;
+	top: 45px;
+	background-color: $color-white;
+	border-radius: 0 0 6px 6px;
+	box-shadow: -30px 45px 100px rgba(0, 0, 0, 0.05);
+	position: absolute;
+	z-index: 1;
+	overflow: hidden;
+
+	.option {
+		width: 100%;
+		padding: 10px 20px;
+		transition: 0.3s;
+		color: $color-text;
+
+		&:hover {
+			background-color: $color-placeholder;
+		}
+	}
+}

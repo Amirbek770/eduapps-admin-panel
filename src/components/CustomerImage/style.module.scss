@@ -1,0 +1,70 @@
+@import '../../styles/colors.scss';
+
+.container {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	padding: 0 20px;
+
+	.customerImg {
+		width: 150px;
+		height: 150px;
+		border-radius: 400px;
+		background-color: $color-grey;
+		border: 1px solid $color-grey;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		overflow: hidden;
+
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+
+		svg {
+			color: $color-text-grey;
+		}
+	}
+
+	.name {
+		font-style: normal;
+		font-weight: 600;
+		font-size: 18px;
+		line-height: 150%;
+		text-align: center;
+		color: $color-text;
+		margin-top: 20px;
+	}
+
+	.referalId {
+		font-style: normal;
+		font-weight: 450;
+		font-size: 14px;
+		line-height: 17px;
+		color: $color-text-grey;
+		margin-bottom: 20px;
+		span {
+			font-weight: bold;
+			color: $color-secondary;
+		}
+	}
+
+	.invested {
+		font-style: normal;
+		font-weight: 600;
+		font-size: 16px;
+		line-height: 20px;
+		color: $color-text;
+	}
+
+	.balance {
+		font-style: normal;
+		font-weight: 600;
+		font-size: 16px;
+		line-height: 20px;
+		color: $color-text;
+		margin-bottom: 10px;
+	}
+}

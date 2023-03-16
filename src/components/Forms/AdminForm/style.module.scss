@@ -1,0 +1,40 @@
+@import '../../../styles/colors';
+
+.form {
+  height: 100%;
+
+  .body {
+    height: 75%;
+    overflow: auto;
+    padding: 0 30px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .btn {
+    position: absolute;
+    bottom: 0;
+    margin: auto;
+    padding: 30px;
+    width: 100%;
+    display: flex;
+    gap: 20px;
+
+    .logOut {
+      width: 100%;
+      background-color: transparent;
+      color: $color-red;
+    }
+
+    .icon {
+      color: $color-red;
+    }
+
+    button {
+      width: 100%;
+      background-color: $color-green;
+      color: $color-white;
+    }
+  }
+}

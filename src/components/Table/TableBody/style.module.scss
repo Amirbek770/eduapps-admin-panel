@@ -1,0 +1,64 @@
+@import '../../../styles/colors';
+
+.table {
+	text-align: left;
+	border-collapse: collapse;
+	width: 100%;
+	background-color: #fcfcfc;
+
+	.headContainer {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+	}
+
+	.head {
+		text-align: left;
+
+		th {
+			padding-left: 10px;
+			text-align: left;
+			z-index: 100;
+
+			font-style: normal;
+			font-weight: 600;
+			font-size: 12px;
+			line-height: 15px;
+			text-transform: uppercase;
+
+			user-select: none;
+
+			color: $color-text-grey;
+			background-color: $color-background;
+
+			&:nth-child(1) {
+				padding-left: 30px;
+			}
+		}
+	}
+
+	.body {
+	}
+
+	.row {
+		height: 58px;
+		padding: 0 30px;
+	}
+
+	.data {
+		padding-left: 10px;
+		background-color: #fcfcfc;
+		border-top: 1px solid #f2f1f2;
+
+		font-style: normal;
+		font-weight: 600;
+		font-size: 12px;
+		line-height: 15px;
+		text-transform: uppercase;
+		color: #000000;
+
+		&:nth-child(1) {
+			padding-left: 30px;
+		}
+	}
+}

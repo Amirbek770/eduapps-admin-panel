@@ -1,0 +1,94 @@
+@import "../../styles/colors";
+
+
+.input {
+  display: flex;
+  cursor: pointer;
+  font-weight: 500;
+  position: relative;
+  overflow: hidden;
+
+  input {
+    position: absolute;
+    display: none;
+    &:checked + span {
+      background-color: mix(#fff, $color-primary, 84%);
+
+      &:before {
+        background-color: $color-primary;
+      }
+    }
+  }
+
+  span {
+    display: flex;
+    align-items: center;
+    padding: 5px 15px 5px 5px;
+    border-radius: 1000px;
+    transition: 0.25s ease;
+
+    &:hover {
+      background-color: mix(#fff, $color-primary, 84%);
+    }
+
+    &:before {
+      display: flex;
+      flex-shrink: 0;
+      content: "";
+      background-color: white;
+      margin-left: 8px;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      margin-right: 15px;
+      transition: 0.25s ease;
+      outline: 4px solid $color-primary;
+      outline-offset: 3px;
+    }
+  }
+}
+
+.success{
+    input {
+      &:checked + span {
+        background-color: mix(#fff, $color-green, 84%);
+
+        &:before {
+          background-color: $color-green;
+        }
+      }
+    }
+
+  span {
+    &:hover {
+     background-color: mix(#fff, $color-green, 84%);
+    }
+
+    &:before {
+     outline: 4px solid $color-green;
+    }
+  }
+}
+
+.error {
+  input {
+    &:checked + span {
+     background-color: mix(#fff, $color-red, 84%);
+
+      &:before {
+        background-color: $color-red;
+      }
+    }
+  }
+
+  span {
+    &:hover {
+      background-color: mix(#fff, $color-red, 84%);
+    }
+
+    &:before {
+      outline: 4px solid $color-red;
+    }
+  }
+}
+

@@ -1,0 +1,20 @@
+@import '../../styles/colors.scss';
+
+.container {
+	border-radius: 4px;
+	padding: 8px 15px;
+	width: fit-content;
+
+	background-color: rgba($color: $color-primary, $alpha: 0.3);
+	color: $color-primary;
+}
+
+.success {
+	background-color: rgba($color: $color-green, $alpha: 0.3);
+	color: $color-green;
+}
+
+.error {
+	background-color: rgba($color: $color-red, $alpha: 0.3);
+	color: $color-red;
+}

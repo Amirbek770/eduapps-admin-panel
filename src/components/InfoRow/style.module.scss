@@ -1,0 +1,55 @@
+@import '../../styles/colors';
+
+.container {
+	width: 100%;
+	padding: 10px 20px;
+	display: flex;
+	justify-content: space-between;
+	background: $color-white;
+	border: 1px solid $color-grey;
+	box-sizing: border-box;
+	border-radius: 8px;
+	gap: 5px;
+	flex-direction: column;
+
+	.title {
+		font-style: normal;
+		font-weight: 400;
+		font-size: 12px;
+		line-height: 12px;
+		color: $color-text-grey;
+		display: flex;
+	}
+
+	.value {
+		font-style: normal;
+		font-weight: 450;
+		font-size: 14px;
+		line-height: 14px;
+		align-items: center;
+		text-align: right;
+		color: #212121;
+		display: flex;
+	}
+}
+
+.editable {
+	padding: 10px 6px 10px 20px;
+	flex-direction: row;
+	align-items: center;
+
+	.title {
+		width: 100%;
+		font-size: 16px;
+		line-height: 16px;
+		color: $color-text-grey;
+	}
+
+	.input {
+		height: 40px;
+
+		input {
+			text-align: end;
+		}
+	}
+}

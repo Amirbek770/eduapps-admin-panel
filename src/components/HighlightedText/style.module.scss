@@ -1,0 +1,10 @@
+@import '../../styles/colors';
+
+.text {
+	span {
+		border-radius: 2px;
+		transition: all 1s ease;
+		color: $color-white;
+		background-color: $color-primary;
+	}
+}

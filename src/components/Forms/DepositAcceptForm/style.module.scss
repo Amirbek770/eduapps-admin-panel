@@ -1,0 +1,28 @@
+@import '../../../styles/colors';
+
+.form {
+	height: 100%;
+
+	.body {
+		height: 75%;
+		overflow: auto;
+		padding: 0 30px 30px;
+		display: flex;
+		flex-direction: column;
+		gap: 15px;
+	}
+
+	.btn {
+		position: absolute;
+		bottom: 0;
+		margin: auto;
+		padding: 30px;
+		width: 100%;
+
+		button {
+			width: 100%;
+			background-color: $color-green;
+			color: $color-white;
+		}
+	}
+}

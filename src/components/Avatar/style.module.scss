@@ -1,0 +1,42 @@
+@import '../../styles/colors.scss';
+
+.container {
+	border-radius: 400px;
+	width: 40px !important;
+	height: 40px;
+	background-color: $color-grey;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+
+	.image {
+		width: 40px;
+		height: 40px;
+		border: none;
+		border-radius: 400px;
+		object-fit: contain;
+		background-color: $color-white;
+	}
+
+	.hover {
+		width: 100px;
+		height: 100px;
+		border: none;
+		border-radius: 400px;
+		position: absolute;
+		top: -105px;
+		display: none;
+		transition: all 0.1s;
+		object-fit: contain;
+		background-color: $color-white;
+	}
+
+	&:hover .hover {
+		display: block;
+	}
+
+	svg {
+		color: $color-text-grey;
+	}
+}

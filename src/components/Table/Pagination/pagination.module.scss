@@ -1,0 +1,65 @@
+@import '../../../styles/colors';
+
+.container {
+	margin-left: auto;
+	padding: 20px 25px;
+	display: flex;
+	gap: 20px;
+	width: fit-content !important;
+	align-content: center;
+	align-items: center;
+	justify-content: flex-end;
+	user-select: none;
+
+	.text {
+		font-style: normal;
+		font-weight: 600;
+		font-size: 13px;
+		line-height: 16px;
+		cursor: pointer;
+		transition: all 0.5s ease;
+		border-radius: 6px;
+		background-color: $color-white;
+		width: 30px;
+		height: 30px;
+		padding: 5px;
+
+		&:hover {
+			transition: 0.5s ease;
+			background-color: $color-primary;
+
+			.icon {
+				transition: 0.1s ease;
+				color: $color-white;
+			}
+		}
+	}
+
+	.numbers {
+		display: flex;
+		gap: 10px;
+
+		.number {
+			display: flex;
+			user-select: none;
+			justify-content: center;
+			align-items: center;
+			width: 30px;
+			height: 30px;
+			border-radius: 6px;
+			font-style: normal;
+			font-weight: 600;
+			font-size: 12px;
+			outline: none;
+			border: none;
+			line-height: 16px;
+			background-color: $color-background;
+			cursor: pointer;
+		}
+
+		.active {
+			background-color: $color-primary;
+			color: $color-white;
+		}
+	}
+}

@@ -1,0 +1,26 @@
+@import '../../../styles/colors';
+
+.action {
+	width: 30px;
+	height: 30px;
+	padding: 0;
+	border-radius: 4px;
+}
+
+.actionEdit {
+	background-color: $color-green;
+	color: $color-white;
+}
+
+.actionDelete {
+	background-color: $color-red;
+}
+
+.actionIcon {
+	color: $color-white;
+}
+
+.actionDefaultStyle {
+	height: 32px;
+	border-radius: 4px;
+}

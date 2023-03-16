@@ -1,0 +1,85 @@
+@import '../../styles/colors';
+
+.container {
+	min-width: 300px;
+	max-width: 300px;
+	width: 100%;
+	padding: 20px;
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+	gap: 15px;
+	border-right: 1px solid #f2f1f2;
+
+	.logo {
+		width: 130px;
+		height: 66px;
+		display: flex;
+		margin: 0 auto 30px;
+
+		img {
+			height: 100%;
+			width: 100%;
+		}
+	}
+
+	.link {
+		text-decoration: none;
+		border-radius: 8px;
+		.item2 {
+			width: 100%;
+			padding: 18px 15px;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			font-family: Avenir Next Cyr, sans-serif;
+			font-style: normal;
+			font-weight: 600;
+			font-size: 16px;
+			line-height: 20px;
+			color: #000000;
+			cursor: pointer;
+		}
+	}
+	.item {
+		width: 100%;
+		padding: 18px 15px;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		box-sizing: border-box;
+		font-family: Avenir Next Cyr, sans-serif;
+		font-style: normal;
+		font-weight: 600;
+		font-size: 16px;
+		line-height: 20px;
+		color: #000000;
+		cursor: pointer;
+		transition: 0.2s;
+		svg {
+			height: 18px;
+			transition: 0.2s;
+		}
+
+		.aitem {
+			outline: none;
+
+			svg {
+				margin-right: 12px;
+				height: 20px;
+			}
+
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+
+		&:hover {
+			color: $color-primary;
+
+			svg {
+				color: $color-primary;
+			}
+		}
+	}
+}

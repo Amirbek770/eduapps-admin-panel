@@ -1,0 +1,14 @@
+@import '../../../styles/colors';
+
+.form {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+
+	.btn {
+		width: 100%;
+		background-color: $color-green;
+		color: $color-white;
+	}
+}

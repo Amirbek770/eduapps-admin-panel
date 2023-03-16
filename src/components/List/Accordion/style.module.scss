@@ -1,0 +1,59 @@
+@import '../../../styles/colors';
+
+.link {
+	text-decoration: none;
+}
+
+.container {
+	border-radius: 8px;
+	cursor: pointer;
+	width: 100%;
+	padding: 18px 15px 0;
+}
+
+.header {
+	text-decoration: none;
+	color: $color-text;
+	display: flex;
+	align-items: center;
+	box-sizing: border-box;
+	font-family: Avenir Next Cyr, sans-serif;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 20px;
+	padding-bottom: 18px;
+	transition: 0.2s all;
+
+	&:hover {
+		color: $color-primary;
+	}
+}
+
+.active {
+	background-color: $color-primary;
+	color: $color-white;
+	box-shadow: 0 15px 35px rgba(244, 199, 33, 0.25);
+
+	&:hover {
+		color: $color-white;
+	}
+}
+
+.title {
+	margin-left: 10px;
+}
+
+.icon {
+}
+
+.iconRight {
+	display: flex;
+	margin-left: auto;
+	transition: 0.2s all;
+}
+
+.iconRightRotated {
+	transform: rotate(90deg);
+	transition: 0.2s all;
+}

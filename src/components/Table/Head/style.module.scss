@@ -1,0 +1,31 @@
+@import '../../../styles/colors';
+
+.containerRelative {
+	position: relative;
+
+	.progress {
+		position: absolute;
+		bottom: 0;
+	}
+}
+
+.container {
+	padding: 25px;
+	background: $color-background-secondary;
+
+	.bar {
+		padding: 12px;
+		background-color: $color-background;
+		border-radius: 8px;
+
+		display: flex;
+		justify-content: space-between;
+		gap: 10px;
+
+		.searchBar {
+			gap: 10px;
+			display: flex;
+			max-width: 450px;
+		}
+	}
+}

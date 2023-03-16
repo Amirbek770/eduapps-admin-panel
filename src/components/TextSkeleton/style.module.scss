@@ -1,0 +1,29 @@
+@import "../../styles/colors";
+
+.button {
+  padding: 10px 15px;
+  border: none;
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background: $color-primary;
+  border-radius: 4px;
+  color: $color-text;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  gap: 10px;
+
+  .icon {
+    color: $color-text;
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.disabled {
+  background-color: $color-placeholder;
+}

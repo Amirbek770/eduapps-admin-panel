@@ -1,0 +1,37 @@
+@import '../../../styles/colors';
+
+.form {
+	height: 100%;
+
+	.body {
+		height: 75%;
+		overflow: auto;
+		padding: 0 30px 30px;
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+	}
+
+	.btn {
+		position: absolute;
+		bottom: 0;
+		padding: 30px;
+		width: 100%;
+
+		button {
+			width: 100%;
+			background-color: $color-green;
+			color: $color-white;
+		}
+	}
+
+	.fromTo {
+		display: flex;
+		gap: 20px;
+	}
+
+	.radio {
+		display: flex;
+		gap: 10px;
+	}
+}

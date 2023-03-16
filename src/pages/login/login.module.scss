@@ -1,0 +1,37 @@
+@import "../../styles/colors";
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.content {
+  max-width: 400px;
+  width: 100%;
+  padding: 60px 50px;
+  background: linear-gradient(332.11deg, $color-primary -141.83%, $color-primary-dark 102.77%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  gap: 15px;
+
+  .title{
+    margin-bottom: 40px;
+    color: $color-text;
+  }
+
+
+
+  .titles{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+
+
+}

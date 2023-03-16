@@ -1,0 +1,8 @@
+@import '../../styles/colors';
+
+.container {
+	border-radius: 10px;
+	border: 1px solid #f2f1f2;
+	background: $color-background-secondary;
+	overflow: hidden;
+}
